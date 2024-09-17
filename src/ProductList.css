@@ -250,3 +250,74 @@ body {
         text-align: center; /* Align text to the center */
       }
   }
+
+  /* CSS for Plant Cards */
+.plant-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    width: 200px; /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plant-image {
+    width: 100%; /* Make the image take up the full width of the card */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 4px;
+  }
+  
+  .plant-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .plant-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .plant-cost {
+    font-size: 16px;
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
+  /* CSS for Category Sections */
+  .category-section {
+    margin-bottom: 40px;
+  }
+  
+  .category-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .plant-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media (max-width: 768px) {
+    .plant-card {
+      width: 150px; /* Adjust width for smaller screens */
+    }
+  
+    .plant-image {
+      height: 120px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .plant-card {
+      width: 100%; /* Make cards full width on very small screens */
+    }
+  }
+  
+  
